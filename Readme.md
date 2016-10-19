@@ -1,7 +1,7 @@
 ﻿# Личный проект «Глейси»
 
-* Студент: [Ксения Круглова](https://up.htmlacademy.ru/htmlcss/15/user/257843).
-* Наставник: [Павел Головин](https://up.htmlacademy.ru/htmlcss/15/user/166546).
+* Студент:  [Ксения Круглова](https://up.htmlacademy.ru/htmlcss/15/user/257843).
+* Наставник:  [Павел Головин](https://up.htmlacademy.ru/htmlcss/15/user/166546).
 
 ---
 
