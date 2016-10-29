@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
     <header class="main-header">
       <div class="index-logo">
-        <img src="img/index-logo.png" width="100" height="50" alt="Gllacy shop">
+        <img src="img/index-logo.svg" width="100" height="50" alt="Gllacy shop">
       </div>
       <nav class="main-navigation">
         <ul>
@@ -24,7 +24,7 @@
         </ul>         
       </nav>        
       <div class="user-block">
-	    <a class="search" href="#"> <img src="img/search.png" width="30" height="30" alt="Поиск"></a>
+	    <a class="search" href="#"> <img src="img/icon-search.png" width="30" height="30" alt="Поиск"></a>
         <a class="login" href="#">Вход</a>
 	    <a class="cart" href="#">Пусто</a>
       </div> 
@@ -35,19 +35,21 @@
 	  </div>
 	</header>
 	
-	
 	<main class="container">
 	  <div class="slider">
 	    <div class="slide slide1">
+		  <img src="img/Ice-cream-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
 		  <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
 		  <a class="slide-btn" href="#">Давайте оба!</a>
 		</div>
 		<div class="slide slide2">
-		  <div class="slide-title">Второй слайд</div>
+		  <img src="img/Ice-cream-2.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+		  <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
 		  <a class="slide-btn" href="#">Давайте оба!</a>
 		</div>
 		<div class="slide slide3">
-		  <div class="slide-title">Третий слайд</div>
+		  <img src="img/Ice-cream-3.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+		  <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
 		  <a class="slide-btn" href="#">Давайте оба!</a>
 		</div>
 	  </div>	
@@ -67,9 +69,9 @@
 	  
 	  <section class="catalog">
 	    <div class="catalog-item">
-		  <div class="hit"> <img src="img/hit.png" width="20" height="20" alt="Хит">
+		  <div class="hit"> <img src="img/hit.png" width="60" height="60" alt="Хит">
 		  </div>
-		  <div class="catalog-item-pic"> <img src="img/orange.png" width="150" height="150" alt="Сливочное с апельсиновым джемом">
+		  <div class="catalog-item-pic"> <img src="img/orange.jpg" width="268" height="268" alt="Сливочное с апельсиновым джемом">
 		  </div>
 		  <span class="catalog-item-price"> 310р/кг
 		  </span>
@@ -77,9 +79,9 @@
 		</div>
 		
 		<div class="catalog-item">
-		  <div class="hit"> <img src="img/hit.png" width="20" height="20" alt="Хит">
+		  <div class="hit"> <img src="img/hit.png" width="60" height="60" alt="Хит">
 		  </div>
-		  <div class="catalog-item-pic"> <img src="img/coffe.png" width="150" height="150" alt="Сливочно-кофейное">
+		  <div class="catalog-item-pic"> <img src="img/coffe.jpg" width="268" height="268" alt="Сливочно-кофейное">
 		  </div>
 		  <span class="catalog-item-price"> 380р/кг
 		  </span>
@@ -87,9 +89,9 @@
 		</div>
 		
 		<div class="catalog-item">
-		  <div class="hit"> <img src="img/hit.png" width="20" height="20" alt="Хит">
+		  <div class="hit"> <img src="img/hit.png" width="60" height="60" alt="Хит">
 		  </div>
-		  <div class="catalog-item-pic"><img src="img/strawberry.png" width="150" height="150" alt="Сливочно-клубничное">
+		  <div class="catalog-item-pic"><img src="img/strawberry.jpg" width="268" height="268" alt="Сливочно-клубничное">
 		  </div>
 		  <span class="catalog-item-price"> 355р/кг
 		  </span>
@@ -97,9 +99,9 @@
 		</div>
 		
 		<div class="catalog-item">
-		  <div class="hit"><img src="img/hit.png" width="20" height="20" alt="Хит">
+		  <div class="hit"><img src="img/hit.png" width="60" height="60" alt="Хит">
 		  </div>
-		  <div class="catalog-item-pic"> <img src="img/creme-brulee.png" width="150" height="150" alt="Сливочное крем-брюле">
+		  <div class="catalog-item-pic"> <img src="img/creme-brulee.jpg" width="268" height="268" alt="Сливочное крем-брюле">
 		  </div>
 		  <span class="catalog-item-price"> 415р/кг
 		  </span>
@@ -107,44 +109,42 @@
 		</div>
 	  </section>
 	  
-	  
 	  <article class="features">
 	    <div class="features-content"> 
 		  <h2 class="features-description">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
 		  </h2>
 		  <div class="features-content-mt">
 		    <div class="modern-technology">
-			   <div class="features-icon"> <img src="img/modern-technology.png" width="30" height="30" alt="">
+			   <div class="features-icon"> <img src="img/icon-ice-cream.png" width="50" height="50" alt="">
 			   </div>
-		       <p>Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий
+		       <p>Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 			   </p>
 			</div>
 			<div class="fresh-products">
-			  <div class="features-icon"> <img src="img/fresh-products.png" width="30" height="30" alt="">
+			  <div class="features-icon"> <img src="img/icon-leaf.png" width="50" height="50" alt="">
 			  </div>
 			  <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты  и добавки произведены из натурального,
-			  экологически чистого сырья
+			  экологически чистого сырья.
 			  </p>
 			</div>
 		  </div>
 		  
 		  <div class="features-content-fd">
 		    <div class="farmers">
-			  <div class="features-icon"> <img src="img/farmers.png" width="30" height="30" alt="">
+			  <div class="features-icon"> <img src="img/icon-cow.png" width="50" height="50" alt="">
 			  </div>
-		      <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество
+		      <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
 			  </p>
 			</div>
 			<div class="delivery">
-			  <div class="features-icon"> <img src="img/farmers.png" width="30" height="30" alt="">
+			  <div class="features-icon"> <img src="img/icon-thermometer.png" width="50" height="50" alt="">
 			  </div>
-			  <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус
+			  <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
 			  </p>
 			</div>
 		  </div>
 		</div>
 	  </article>
-	  
 	  
 	  <div class="index-content">
 	    <div class="index-content-news">
@@ -161,7 +161,6 @@
 		  </form>
 		</div>
 	  </div>
-	  
 	  
 	  <div class="location">
 	    <div class="map"> <img src="img/map.png" width="300" height="100" alt="">
@@ -180,7 +179,6 @@
 		</div>
 	  </div>
 	</main>
-	
 	
 	<footer class="main-footer">
 	  <div class="container">
@@ -205,7 +203,7 @@
 		
 		<section class="footer-copyright">
 		  <div class="footer-logo">
-           <img src="img/logo-htmlacademy.png" width="100" height="50" alt="HTML Academy">
+           <img src="img/logo-html-academy.png" width="100" height="50" alt="HTML Academy">
           </div>
 		  <p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>&#169; 2016</p>
 	    </section>
