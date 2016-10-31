@@ -4,7 +4,7 @@ body {
 	color: #323232;
 	font-weight: normal;
 	font-family: "Roboto";
-	
+	background: #849d8f;
 }
 h1{
 	font-size: 35px;
@@ -12,7 +12,6 @@ h1{
 	color: #ffffff;
 	font-weight: bold;
 	font-family: "Roboto";
-	
 }
 
 h2 {
@@ -21,6 +20,61 @@ h2 {
 	color: #323232;
 	font-weight: normal;
 	font-family: "Roboto";
+}
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+	width: 1146px;
+	padding: 0 27px;
+	background:  #d4d9b6;
+	margin: 0 auto;
+}
+.index-logo {
+	float:left; 
+	margin-top:10px;
+	margin-right:30px;
+	width: 154px;
+	background: black;
 	
+}
+.main-navigation{
+	float:left;
+	width: 385px; /* предполагаемая ширина (?) */
+	background: black;
+	
+}
+.user-block{
+	float:left;
+	width: 267px;
+	margin-top: 23px;
+	background: black;
+	margin-left: 310px;
+	min-height: 34px;
+}
+.header-phone{
+	float:right;
+	margin-top:15px;
+	width: 175px;
+	font-size: 14px;
+	font-weight: bold;
+	background: black;
+	text-align:right;
+	color: #ffffff;
+	
+}
+.slide {
+	text-align:center;
+}
+.number{
+	font-size: 22px;
+	font-weight: bold;
+}
+.slide2,.slide3 {
+	display: none;
 }
 
