@@ -6,35 +6,37 @@
 	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  
     <header class="main-header">
-	  <div class="index-logo">
-		<a class="logo-main-page" href="#"><img src="img/index-logo.svg" width="100" height="50" alt="Gllacy shop"></a>
-	  </div>
-	  <nav class="main-navigation">
-        <ul>
-          <li>
-            <a href="#">Каталог</a>
-          </li>
-	      <li>
-			<a href="#">Доставка и оплата</a>
-		  </li>
-		  <li>
-			<a href="#">О компании</a>
-        </ul>             
-      </nav>   
-	  <div class="user-block">
-		<a class="search" href="#"> <img src="img/icon-search.png" width="30" height="30" alt="Поиск"></a>
-        <a class="login" href="#">Вход</a>
-		<a class="cart" href="#">Корзина</a>
-      </div> 
-      <div class="header-phone">
-	   C 10 до 20, ежедневно <br>
-	   <b>8 912 450 25-25</b>
+	  <div class="container clearfix">
+        <div class="index-logo">
+          <img src="img/index-logo.svg" width="154" height="64" alt="Gllacy shop">
+        </div>
+        <nav class="main-navigation">
+          <ul class="main-menu">
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+	        <li>
+	         <a href="#">Доставка и оплата</a>
+	        </li>
+	        <li>
+	          <a href="#">О компании</a>
+		    </li>
+          </ul>         
+        </nav>        
+        <div class="user-block">
+	      <a class="search" href="#"> <img src="img/icon-search.png" width="19" height="17" alt="Поиск"></a>
+          <a class="login" href="#">Вход</a>
+	      <a class="cart" href="#">Пусто</a>
+        </div> 
+        <div class="header-phone">
+	      C 10 до 20, ежедневно <br>
+	      <span class="number">8 912 450 25-25</span>
+	    </div>
 	  </div>
 	</header>
 	
-	<main class="container">
+	<main class="container clearfix">
 	  <div class="breadcrumbs">
 	    <a href="#">Главная</a>
 		<a href="#">Каталог</a>
@@ -43,22 +45,55 @@
 	  
 	  <section class="catalog-filter">
 	    <h1 class="catalog-filter-name">Сливочное мороженое </h1>
-		  <div class="filter">
-		  		  
-		  <p>Наполнители:</p>
-	      <form action="https://echo.htmlacademy.ru" method="post">
-	        <input type="checkbox" name="chocolate" id="chocolate-field" checked>
-              <label for="chocolate-field">шоколадные</label>
-		    <input type="checkbox" name="sugar" id="sugar-field" checked>
-              <label for="sugar-field">сахарные присыпки</label>
-		    <input type="checkbox" name="fruits" id="fruits-field">
-              <label for="fruits-field">фрукты</label>
-		    <input type="checkbox" name="syrups" id="syrups-field">
-              <label for="syrups-field">сиропы</label>
-	        <input type="checkbox" name="jams" id="jams-field">
-              <label for="jams-field">джемы</label>
-	        <input type="submit" value="Применить" class="btn-apply">
-	      </form>
+		  <div class="filter clearfix">
+		    <form action="https://echo.htmlacademy.ru" method="post">
+			  <div class="catalog-filter-sorting">
+			    <span>Сортировка:</span>
+			    <div class="sorting-choice">
+			      <select name="sorting">
+			        <option value="popular"selected>по популярности</option>
+				    <option value="cheap-first">сначала недорогие</option>
+				    <option value="expensive-first">сначала дорогие</option>
+				    <option value="fat-content">по жирности</option>
+			      </select>	
+			    </div>
+			  </div>
+			  <div class="catalog-filter-price">
+			    <span>Цена:</span>
+			    <div class="price-choice">
+			  
+			    </div>
+			  </div>
+			  <div class="catalog-filter-fat">
+			    <span>Жирность:</span>
+			    <div class="fat-choice">
+			      <input type="radio" name="fat" id="0">
+                  <label for="0">0%</label>
+		          <input type="radio" name="fat" id="less10" checked>
+                  <label for="less10">до 10%</label>
+		          <input type="radio" name="fat" id="less30">
+                  <label for="less30">до 30%</label>
+		          <input type="radio" name="fat" id="more30">
+                  <label for="more30">свыше 30%</label>
+			    </div> 
+			  </div>
+			  <div class="catalog-filter-flavors">
+		        <span>Наполнители:</span>
+			    <div class="flavors-choice">
+	              <input type="checkbox" name="chocolate" id="chocolate-field" checked>
+                  <label for="chocolate-field">шоколадные</label>
+		          <input type="checkbox" name="sugar" id="sugar-field" checked>
+                  <label for="sugar-field">сахарные присыпки</label>
+		          <input type="checkbox" name="fruits" id="fruits-field">
+                  <label for="fruits-field">фрукты</label>
+		          <input type="checkbox" name="syrups" id="syrups-field">
+                  <label for="syrups-field">сиропы</label>
+	              <input type="checkbox" name="jams" id="jams-field">
+                  <label for="jams-field">джемы</label>
+				</div>
+			  </div>
+	              <input type="submit" value="Применить" class="btn-apply">
+			</form>
 		  </div>
 	  </section>
 	  
@@ -156,15 +191,17 @@
 		  </div>
 		  <span class="catalog-item-price"> 420р/кг
 		  </span>
-		  <a class="atalog-item-info" href="#">Сливочное с мятным сиропом</a>
+		  <a class="catalog-item-info" href="#">Сливочное с мятным сиропом</a>
 		</div>
 	  </section>
 	  <div class="paginator">
-	    <span class="paginator-page">1</span>
-	    <a class="paginator-page" href="#">2</a>
-		<a class="paginator-page" href="#">3</a>
-		<a class="paginator-page" href="#">4</a>
-		<a class="paginator-page" href="#">5</a>
+	    <a class="prev" href="#prev">Назад</a>
+	    <span >1</span>
+	    <a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+		<a class="next" href="#prev">Вперед</a>
 	  </div>
 	  
 	  <hr class="catalog-line">
@@ -172,16 +209,16 @@
 	</main>
 	
 	<footer class="main-footer">
-	  <div class="container">
+	  <div class="container clearfix">
 	    <section class="footer-social">
-		  <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-		  <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+		  <a class="social-btn social-btn-tw" href="#"><img src="../img/icon-twitter.png" width="33" height="33" alt=""></a>
+		  <a class="social-btn social-btn-inst" href="#"><img src="../img/icon-inst.png" width="33" height="33" alt=""></a>
+          <a class="social-btn social-btn-fb" href="#"><img src="../img/icon-fb.png" width="33" height="33" alt=""></a>
+          <a class="social-btn social-btn-vk" href="#"><img src="../img/icon-vk.png" width="33" height="33" alt=""></a>
 		</section>
 		
-		<section class="footer-about-us-suppliers">
-		  <div class="about-us-left">
+		<section class="footer-about-us">
+		  <div class="about-us-suppliers">
 		    <img src="img/heart.png" width="10" height="10" alt="">
 		    <a class="for-suppliers" href="#">Для поставщиков</a>
 			<a class="about-production" href="#">О производстве</a>
@@ -194,11 +231,11 @@
 		
 		<section class="footer-copyright">
 		  <div class="footer-logo">
-           <img src="img/logo-html-academy.png" width="100" height="50" alt="HTML Academy">
+           <img src="img/logo-html-academy.png" width="110" height="40" alt="HTML Academy">
           </div>
 		  <p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>&#169; 2016</p>
 	    </section>
-		
+
 	  </div>
 	</footer>
 	
