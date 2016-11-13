@@ -224,6 +224,8 @@ h2 {
 	line-height: 16px;
     list-style: none;
 	background: #f8f7f4;
+	overflow: hidden;
+	z-index: 2;
 }
 .main-menu .sub-menu a {
 	display: block;
@@ -440,23 +442,48 @@ h2 {
 }
 .catalog {
 	font-size:0;
-	/* margin-bottom: 16px; */
+	margin:0 -10px;
+	text-align: center;
 }
 .catalog-item{
+	width: 25%;
+	box-sizing: border-box;
 	display: inline-block;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-left: 0px;
-	margin-right: 0px;
+	margin-right: 0;
 	margin-bottom: 40px;
 	vertical-align:top;
 	font-size: 16px;
-	outline: 1px solid black;
+	/* outline: 1px solid black; */
 	position: relative;
 }
-.catalog-item::hover{
+.catalog-item-pic-out{
+	display: inline-block;
+	width: 268px;
+	height: 268px;
+	border-radius: 50%;
+	overflow: hidden;
+	
+}
+.catalog-item-inner .btn{
+	display: none;
+}
+.catalog-item-inner:hover .btn{
+	display: inline-block;
+	position: relative;
+	z-index: 2;
  
 }
+.catalog-item-inner{
+	position: absolute;
+	padding: 5px 10px 10px;
+	left: 0;
+	
+}
+.catalog-item-inner:hover{
+    background: rgba(255,255,255, 0.3);
+	
+}
+
 .catalog-item:last-child {
     margin-right: 0;
 }
@@ -465,10 +492,7 @@ h2 {
 }
 
 .catalog-item-pic{
-	width: 267px;
-	height: 267px;
-	border-radius: 50%;
-	overflow: hidden;
+	margin-bottom: 10px;
 }
 .catalog-item-info {
 	display: inline-block;
@@ -669,7 +693,7 @@ h2 {
 	background-position: -10px -579px;
 	
 }
-.social-btn-tw::hover{
+.social-btn-tw:hover{
 
 }
 .social-btn-tw::active{
