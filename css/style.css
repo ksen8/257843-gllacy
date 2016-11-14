@@ -440,10 +440,11 @@ h2 {
 .gifts-item .btn {
 	float: right;
 }
+
 .catalog {
 	font-size:0;
 	margin:0 -10px;
-	text-align: center;
+	/* text-align: center; */
 }
 .catalog-item{
 	width: 25%;
@@ -453,6 +454,7 @@ h2 {
 	margin-bottom: 40px;
 	vertical-align:top;
 	font-size: 16px;
+	text-align: center;
 	/* outline: 1px solid black; */
 	position: relative;
 }
@@ -469,19 +471,18 @@ h2 {
 }
 .catalog-item-inner:hover .btn{
 	display: inline-block;
-	position: relative;
-	z-index: 2;
- 
+	
 }
 .catalog-item-inner{
-	position: absolute;
+	/* position: absolute; */
 	padding: 5px 10px 10px;
 	left: 0;
-	
+	right: 0;
 }
 .catalog-item-inner:hover{
     background: rgba(255,255,255, 0.3);
-	
+	z-index: 1;
+	position: absolute;
 }
 
 .catalog-item:last-child {
