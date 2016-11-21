@@ -12,7 +12,6 @@
     <input type="radio" id="btn-2" name="toggle">
     <input type="radio" id="btn-3" name="toggle">
     <div class="site-wrapper">
-      <!-- <div class="content-wrapper"> -->
         <header class="main-header">
 		  <div class="container clearfix">
             <div class="index-logo">
@@ -191,22 +190,25 @@
 		      </div>
 	        </div>
 		  </div>
-		  <div class="map"><img src="img/map.jpg" width="1200" height="430" alt="">
-		  <div class="feedback"> 
-		    <p>Адрес главного офиса и <br>
-		    офлайн магазина: <br>
-		      <span class="contacts">ул. Большая Конюшенная <br>
-		     19/8, Санкт-Петербург </span>
-		    </p>
-		    <p>Для заказов по телефону:<br>
+		  
+		  <div class="map">
+		    <!-- <img src="img/map.jpg" width="1200" height="430" alt=""> -->
+		    <div id="yandex-map"></div>
+		    <div class="feedback"> 
+		      <p>Адрес главного офиса и <br>
+		      офлайн магазина: <br>
+		       <span class="contacts">ул. Большая Конюшенная <br>
+		       19/8, Санкт-Петербург </span>
+		      </p>
+		      <p>Для заказов по телефону:<br>
 		      <span class="contacts">8 812 450 25 25</span><br>
-		    (с 10 до 20 ежедневно)
-		    </p>
+		      (с 10 до 20 ежедневно)
+		      </p>
 		      <a class="btn" href="#">Форма обратной связи</a>
+	        </div>
 	      </div>
-	      </div>
-		</main>	
-      <!-- </div> -->
+    	</main>	
+      
 	    <footer class="main-footer">
 	      <div class="container clearfix">
 	        <section class="footer-social">
@@ -220,7 +222,7 @@
 			  <a class="our-documents" href="#">Наши документы</a>
 			  <a class="about-production" href="#">О производстве</a>
 		  	  <a class="ecological-standards" href="#">Экологические стандарты</a>
-		    </section>
+			</section>
 		    <section class="footer-copyright">
 		      <div class="footer-logo">
                <img src="img/logo-html-academy.png" width="110" height="40" alt="HTML Academy">
@@ -245,6 +247,24 @@
 		    <input class="content-search" type="text" name="search" placeholder="Что ищем?">
 		  </form>
 		</div>
+		
+		<div class="modal-overlay">
+		</div>
+		
+		<div class="modal-feedback">
+		  <button class="modal-feedback-close" type="button" title="Закрыть">Закрыть</button>
+		  <span class="modal-feedback-title">Мы обязательно вам ответим!</span>
+		  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+		    <input class="feedback-name" type="text" name="fb-name" placeholder="Как вас зовут?">
+			<input class="feedback-email" type="text" name="fb-email" placeholder="Ваша почта для ответа?">
+			<textarea class="feedback-wishes" name="fb-wishes" placeholder="Напишите что-нибудь..."></textarea>
+		  </form>
+		  <button class="btn feedback-btn" type="submit" value="Отправить">Отправить</button>
+		</div>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=fB6MlusWvb2tfnwJcJuePCOfPDox-eDd&amp;width=100%25&amp;height=430&id=yandex-map;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+		<script src="../js/popup.js">
+		</script>
+		
     </div>
   </body>
 </html>
