@@ -5,7 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-mini.css">
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -20,42 +20,26 @@
             <nav class="main-navigation">
               <ul class="main-menu">
                 <li>
-			      <a href="#"><span>Каталог</span></a>
+			      <a class="main-menu-link" href="catalog.html"><span>Каталог</span></a>
 			        <ul class="sub-menu">
 				      <li><a href="#1"><b>Новинки</b></a></li>
-				      <li><a href="#2">Сливочное</a></li>
+				      <li><a href="catalog.html">Сливочное</a></li>
 				      <li><a href="#3">Щербеты</a></li>
 				      <li><a href="#4">Фруктовый лед</a></li>
 				      <li><a href="#5">Мелорин</a></li>
 				    </ul>
                 </li>
 	            <li>
-	             <a href="#"><span>Доставка и оплата</span></a>
+	             <a class="main-menu-link" href="#"><span>Доставка и оплата</span></a>
 	            </li>
 	            <li>
-	              <a href="#"><span>О Компании</span></a>
+	              <a class="main-menu-link" href="#"><span>О Компании</span></a>
 		        </li>
               </ul>         
             </nav>        
             <div class="user-block">
-	          <a class="search" href="#">
-			  	<div class="modal-search">
-		          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-		            <input class="content-search" type="text" name="search" placeholder="Что ищем?">
-		          </form>
-		        </div>
-			  </a>
-              <a class="login" href="#">Вход
-			    <div class="modal-login">
-                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                    <input class="content-user" type="text" name="login" placeholder="Электронная почта" required>
-                    <input class="content-password" type="password"  name="password" placeholder="Пароль" required>
-                    <button class="btn" type="submit">Войти</button>
-			        <a class="restore" href="#">Забыли пароль?</a>
-		            <a class="new-user" href="#">Новая регистрация</a>
-                  </form>
-                </div>
-			  </a>
+			  <a class="search" href="#"></a>
+			  <a class="login" href="#">Вход</a>
 	          <a class="cart" href="#">Пусто</a>
             </div> 
             <div class="header-phone">
@@ -68,7 +52,6 @@
 		<main>
 		  <div class="container clearfix">
             <div class="slider">
-			 
 			  <div class="slide" id="slide1">
                 <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
                 <a class="slide-btn" href="#">Давайте оба!</a>
@@ -163,7 +146,6 @@
 	          <div class="features-content clearfix"> 
 		        <h2 class="features-description">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
 		        </h2>
-		  
 		        <div class="features-content-left">
 		          <div class="modern-technology">
 			         <div class="ic-icon"></div>
@@ -176,7 +158,6 @@
 			        </p>
 			      </div>
 		        </div>
-		  
 		        <div class="features-content-right">
 		          <div class="farmers">
 			        <div class="cow-icon"></div>
@@ -207,12 +188,9 @@
 		      </div>
 	        </div>
 		  </div>
-		  
-		  
-		  <div class="map-c">
-		    <!-- <img src="img/map.jpg" width="1200" height="430" alt=""> -->
-		    <div id="yandex-map"></div>
-			<div class="feedback"> 
+		  <div class="map">
+		    <div class="container-feedback">
+			  <div class="feedback"> 
 		        <p>Адрес главного офиса и <br>
 		        офлайн магазина: <br>
 		         <span class="contacts">ул. Большая Конюшенная <br>
@@ -223,11 +201,11 @@
 		        (с 10 до 20 ежедневно)
 		        </p>
 		        <a class="btn js-open-modal" href="form.html">Форма обратной связи</a>
-	        </div>
+	          </div>
+			</div>
+			<div id="yandex-map"></div>
 		  </div>
-		  
-	       
-    	</main>	
+		</main>	
       
 	    <footer class="main-footer">
 	      <div class="container clearfix">
@@ -251,28 +229,45 @@
 	        </section>
           </div>
 	    </footer>
-		
-		
-		
-
-		
+				
 		<div class="modal-overlay">
 		</div>
 		
+		<div class="modal-search">
+		  <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+		    <input class="content-search" type="text" name="search" placeholder="Что ищем?">
+		  </form>
+		</div>
+		
+		<div class="modal-login">
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="content-user" type="text" name="login" placeholder="Электронная почта" required>
+            <input class="content-password" type="password"  name="password" placeholder="Пароль" required>
+            <button class="btn" type="submit">Войти</button>
+			<a class="restore" href="#">Забыли пароль?</a>
+		    <a class="new-user" href="#">Новая регистрация</a>
+          </form>
+        </div>
+				
 		<div class="modal-feedback">
 		  <button class="modal-feedback-close" type="button" title="Закрыть">Закрыть</button>
 		  <span class="modal-feedback-title">Мы обязательно вам ответим!</span>
 		  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-		    <input class="feedback-name" type="text" name="fb-name" placeholder="Как вас зовут?">
-			<input class="feedback-email" type="text" name="fb-email" placeholder="Ваша почта для ответа?">
+		    <input class="feedback-name" type="text" name="fb-name">
+			<div class="label-box">
+			  <label>Как вас зовут?</label>
+			</div>
+			<input class="feedback-email" type="text" name="fb-email">
+			<div class="label-box">
+			  <label>Ваша почта для ответа?</label>
+			</div>
 			<textarea class="feedback-wishes" name="fb-wishes" placeholder="Напишите что-нибудь..."></textarea>
 		  </form>
 		  <button class="btn feedback-btn" type="submit" value="Отправить">Отправить</button>
 		</div>
 		
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=fB6MlusWvb2tfnwJcJuePCOfPDox-eDd&amp;width=100%25&amp;height=430&id=yandex-map;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-		<script src="js/popup.js"></script>
-		
-    </div>
+		<script src="js/popup-mini.js"></script>
+	</div>
   </body>
 </html>

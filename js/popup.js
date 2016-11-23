@@ -1,7 +1,7 @@
-    var link = document.querySelector(".js-open-modal");
-	var popup = document.querySelector(".modal-feedback");
-	var close = popup.querySelector(".modal-feedback-close");
-    var overlay = document.querySelector(".modal-overlay");
+  var link = document.querySelector(".js-open-modal");
+  var popup = document.querySelector(".modal-feedback");
+  var close = popup.querySelector(".modal-feedback-close");
+  var overlay = document.querySelector(".modal-overlay");
 
 	link.addEventListener("click", function(event) {
       event.preventDefault();

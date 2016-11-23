@@ -2,50 +2,52 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <title>Глейси: каталог</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style-mini.css">
   </head>
   <body>
     <header class="main-header">
-		  <div class="container clearfix">
-            <div class="index-logo">
-			  <a href="index.html">
-                <img src="img/index-logo.svg" width="154" height="64" alt="Gllacy shop">
-			  </a>
-            </div>
-            <nav class="main-navigation">
-              <ul class="main-menu">
-                <li class="active">
-			      <a href="#"><span class="active-item">Каталог</span></a>
-			        <ul class="sub-menu">
-				      <li><a href="#1"><b>Новинки</b></a></li>
-				      <li ><a href="#2">Сливочное</a></li>
-				      <li class="active"><a href="#3">Щербеты</a></li>
-				      <li><a href="#4">Фруктовый лед</a></li>
-				      <li><a href="#5">Мелорин</a></li>
-				    </ul>
-                </li>
-	            <li>
-	             <a href="#"><span>Доставка и оплата</span></a>
-	            </li>
-	            <li >
-	              <a href="#"><span>О Компании</span></a>
-		        </li>
-              </ul>         
-            </nav>        
-            <div class="user-block">
-	          <a class="search" href="#"></a>
-              <a class="login" href="#">Вход</a>
-	          <a class="cart-catalog" href="#">2 товара</a>
-            </div> 
-            <div class="header-phone">
-	          C 10 до 20, ежедневно <br>
-	          <span class="number">8 812 450-25-25</span>
-	        </div>
-	      </div>
+	  <div class="container clearfix">
+        <div class="index-logo">
+		  <a href="index.html">
+            <img src="img/index-logo.svg" width="154" height="64" alt="Gllacy shop">
+		  </a>   
+        </div>
+        <nav class="main-navigation">
+          <ul class="main-menu">
+            <li class="active">
+			  <a class="main-menu-link" href="#"><span class="active-item">Каталог</span></a>
+			    <ul class="sub-menu">
+				  <li><a href="#1"><b>Новинки</b></a></li>
+				  <li><a href="#2">Сливочное</a></li>
+				  <li class="active"><a href="#3">Щербеты</a></li>
+				  <li><a href="#4">Фруктовый лед</a></li>
+				  <li><a href="#5">Мелорин</a></li>
+				</ul>
+            </li>
+	        <li>
+	          <a class="main-menu-link" href="#"><span>Доставка и оплата</span></a>
+	        </li>
+	        <li>
+	          <a class="main-menu-link" href="#"><span>О Компании</span></a>
+		    </li>
+          </ul>         
+        </nav>        
+        <div class="user-block">
+	      <a class="search" href="#"></a>
+          <a class="login" href="#">Вход</a>
+	      <a class="cart-catalog" href="#">2 товара</a>
+        </div> 
+        <div class="header-phone">
+	      C 10 до 20, ежедневно <br>
+	      <span class="number">8 812 450-25-25</span>
+	    </div>
+	  </div>
 	</header>
 	
-	<main class="">
+	<main>
 	  <div class="container clearfix">
 	    <div class="breadcrumbs clearfix">
 	      <a class="breadcrumbs-arrow" href="index.html"><span>Главная</span></a>
@@ -61,7 +63,7 @@
 			    <span>Сортировка:</span>
 			    <div class="sorting-choice">
 			      <select name="sorting">
-			        <option value="popular"selected>по популярности</option>
+			        <option value="popular" selected>по популярности</option>
 				    <option value="cheap-first">сначала недорогие</option>
 				    <option value="expensive-first">сначала дорогие</option>
 				    <option value="fat-content">по жирности</option>
@@ -140,7 +142,7 @@
 				  </label>
 				</div>
 			  </div>
-	              <input type="submit" value="Применить" class="btn-apply">
+	          <input type="submit" value="Применить" class="btn-apply">
 			</form>
 		  </div>
 	  </section>
@@ -318,50 +320,53 @@
 	</main>
 	
 	<footer class="main-footer">
-	      <div class="container clearfix">
-	        <section class="footer-social">
-		      <a class="social-btn social-btn-tw" href="#"></a>
-		      <a class="social-btn social-btn-inst" href="#"></a>
-              <a class="social-btn social-btn-fb" href="#"></a>
-              <a class="social-btn social-btn-vk" href="#"></a>
-		    </section>
-		    <section class="footer-about-us">
-		      <a class="for-suppliers" href="#">Для поставщиков</a>
-			  <a class="our-documents" href="#">Наши документы</a>
-			  <a class="about-production" href="#">О производстве</a>
-		  	  <a class="ecological-standards" href="#">Экологические стандарты</a>
-		    </section>
-		    <section class="footer-copyright">
+	  <div class="container clearfix">
+	    <section class="footer-social">
+		  <a class="social-btn social-btn-tw" href="#"></a>
+		  <a class="social-btn social-btn-inst" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-vk" href="#"></a>
+		</section>
+		<section class="footer-about-us">
+		  <a class="for-suppliers" href="#">Для поставщиков</a>
+		  <a class="our-documents" href="#">Наши документы</a>
+		  <a class="about-production" href="#">О производстве</a>
+		  <a class="ecological-standards" href="#">Экологические стандарты</a>
+		</section>
+		<section class="footer-copyright">
 		      <div class="footer-logo">
                <img src="img/logo-html-academy.png" width="110" height="40" alt="HTML Academy">
               </div>
 		      <p>Сделано в <a class="" href="https://htmlacademy.ru">HTML Academy</a>&#169; 2016</p>
-	        </section>
-          </div>
+	    </section>
+      </div>
 	</footer>
 	
-	<div class="modal-cart">
-	  <table>
-	  <tr class="cart-row-1">
-	      <td class="cart-product-name">
-		    <button class="cart-product-del" type="button" title="Закрыть">Закрыть</button>
-		  Пломбир с апельсиновым джемом</td>
-		  <td class="cart-calculation">1,5 кг x <span>200 руб.</span></td>
-		  <td class="cart-product-sum">300 руб.</td>
-	  </tr>
-	  <tr class="cart-row-2">
-	      <td class="cart-product-name">
+	  <div class="modal-cart">
+	    <table>
+	      <tr class="cart-row-1">
+	        <td class="cart-product-name">
+		      <button class="cart-product-del" type="button" title="Закрыть">Закрыть</button>
+			<div class="cart-product-image">
+			  <img src="img/cart-orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+		    </div>
+		    Пломбир с апельсиновым джемом</td>
+		    <td class="cart-calculation">1,5 кг x <span>200 руб.</span></td>
+		    <td class="cart-product-sum">300 руб.</td>
+	      </tr>
+	      <tr class="cart-row-2">
+	        <td class="cart-product-name">
 		    <button class="cart-product-del" type="button" title="Закрыть">Закрыть</button>
 		    <div class="cart-product-image">
 			  <img src="img/cart-strawbberry.jpg" width="33" height="33" alt="Клубничный пломбир">
 		    </div>
-		  Клубничный пломбир с присыпкой из белого шоколада</td>
-		  <td class="cart-calculation">1,5 кг x <span>300 руб.</span></td>
-		  <td class="cart-product-sum">450 руб.</td>
-	  </tr>
-	  </table>
-	  <span class="cart-total"><b>Итого: 750руб.</b></span>
-	  <button class="btn" type="submit">Оформить заказ</button>
-	</div>
+		    Клубничный пломбир с присыпкой из белого шоколада</td>
+		    <td class="cart-calculation">1,5 кг x <span>300 руб.</span></td>
+		    <td class="cart-product-sum">450 руб.</td>
+	      </tr>
+	    </table>
+	    <div class="cart-total"><b>Итого: 750 руб.</b></div>
+	    <button class="btn" type="submit">Оформить заказ</button>
+	  </div>
   </body>
 </html>
