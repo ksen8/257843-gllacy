@@ -1227,7 +1227,7 @@ a.catalog-item-info {
 }
 
 .breadcrumbs-arrow::after {
-	content: "";
+	content: "\00BB";
     position: absolute;
 	color: #ffffff;
     top: 0;
