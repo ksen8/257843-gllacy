@@ -36,9 +36,55 @@
           </ul>         
         </nav>        
         <div class="user-block">
-	      <a class="search" href="#"></a>
-          <a class="login" href="#">Вход</a>
-	      <a class="cart-catalog" href="#">2 товара</a>
+		  <div class="search-container">
+	        <a class="search" href="#"></a>
+			<div class="modal-search">
+		      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+		        <input class="content-search" type="text" name="search" placeholder="Что ищем?">
+		      </form>
+		    </div>
+		  </div>
+		  <div class="login-container">
+            <a class="login" href="#">Вход</a>
+			<div class="modal-login">
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="content-user" type="text" name="login" placeholder="Электронная почта" required>
+                <input class="content-password" type="password"  name="password" placeholder="Пароль" required>
+                <button class="btn" type="submit">Войти</button>
+			    <a class="restore" href="#">Забыли пароль?</a>
+		        <a class="new-user" href="#">Новая регистрация</a>
+              </form>
+            </div>
+		  </div>
+		  <div class="cart-catalog-container">
+	        <a class="cart-catalog" href="#">2 товара</a>
+			<div class="modal-cart">
+	          <table>
+	            <tr class="cart-row-1">
+	              <td class="cart-product-name">
+		            <button class="cart-product-del" type="button" title="Закрыть">Закрыть</button>
+			        <div class="cart-product-image">
+			          <img src="img/cart-orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+		            </div>
+		          Пломбир с апельсиновым джемом</td>
+		          <td class="cart-calculation">1,5 кг x <span>200 руб.</span></td>
+		          <td class="cart-product-sum">300 руб.</td>
+	            </tr>
+	            <tr class="cart-row-2">
+	              <td class="cart-product-name">
+		          <button class="cart-product-del" type="button" title="Закрыть">Закрыть</button>
+		          <div class="cart-product-image">
+			        <img src="img/cart-strawbberry.jpg" width="33" height="33" alt="Клубничный пломбир">
+		          </div>
+		          Клубничный пломбир с присыпкой из белого шоколада</td>
+		          <td class="cart-calculation">1,5 кг x <span>300 руб.</span></td>
+		          <td class="cart-product-sum">450 руб.</td>
+	            </tr>
+	          </table>
+	          <div class="cart-total"><b>Итого: 750 руб.</b></div>
+	          <button class="btn" type="submit">Оформить заказ</button>
+	        </div>
+		  </div>
         </div> 
         <div class="header-phone">
 	      C 10 до 20, ежедневно <br>

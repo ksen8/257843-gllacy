@@ -297,19 +297,20 @@ h2 {
 }
 
 .user-block {
-	float:right;
+	float: right;
+	width: 267px;
 	margin-top: 22px;
 	font-size: 0;
 	margin-left: 300px; 
 }
 
-/* .search-container {
+.search-container {
 	display: inline-block;
-	margin-bottom: 5px;
-	margin-top: 0;
+	position: relative;
+	vertical-align: top;
 	width: 32px;
 	height: 32px;
-} */
+}
 
 .search{
 	position: relative;
@@ -356,7 +357,7 @@ h2 {
 	-5px 0 20px rgba(0, 0, 0, 0.4); 
 }
 
-.search:hover .modal-search{
+.search-container:hover .modal-search{
 	display: block;
 }
 
@@ -378,7 +379,11 @@ h2 {
 .search-form input[type="text"]:focus{
 	border: 2px solid #8fbdec;
 }
-
+.login-container{
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
 .login {
 	position: relative;
 	display: inline-block;
@@ -419,10 +424,11 @@ h2 {
 .modal-login{
 	display: none;
 	position: absolute;
-	top: 30px;
+	top: 36px;
 	right: 0;
 	width: 238px;
 	padding: 20px;
+	z-index: 5;
 	border-radius: 2%;
 	color:#323232;
 	background: #f8f7f4;
@@ -464,7 +470,7 @@ h2 {
 	margin-right: 16px;
 }
 
-.login:hover .modal-login{
+.login-container:hover .modal-login{
 	display: block;
 }
 
@@ -497,6 +503,11 @@ h2 {
 
 /* Заполненная корзина для каталога: */
 
+.cart-catalog-container {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
 .cart-catalog {
 	position: relative;
 	display: inline-block;
@@ -523,7 +534,7 @@ h2 {
     background: transparent url("../img/sprite.png") no-repeat;
     background-position: -10px -50px;
 }
-.cart-catalog:hover .modal-cart{
+.cart-catalog-container:hover .modal-cart{
 	display: block;
 }
 /* Корзина с товарами */

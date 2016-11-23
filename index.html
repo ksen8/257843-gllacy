@@ -38,8 +38,26 @@
               </ul>         
             </nav>        
             <div class="user-block">
-			  <a class="search" href="#"></a>
-			  <a class="login" href="#">Вход</a>
+			  <div class="search-container">
+			    <a class="search" href="#"></a>
+				<div class="modal-search">
+		          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+		            <input class="content-search" type="text" name="search" placeholder="Что ищем?">
+		          </form>
+		        </div>
+			  </div>
+			  <div class="login-container">
+			    <a class="login" href="#">Вход</a>
+				<div class="modal-login">
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <input class="content-user" type="text" name="login" placeholder="Электронная почта" required>
+                    <input class="content-password" type="password"  name="password" placeholder="Пароль" required>
+                    <button class="btn" type="submit">Войти</button>
+			        <a class="restore" href="#">Забыли пароль?</a>
+		            <a class="new-user" href="#">Новая регистрация</a>
+                  </form>
+                </div>
+			  </div>
 	          <a class="cart" href="#">Пусто</a>
             </div> 
             <div class="header-phone">
@@ -233,22 +251,6 @@
 		<div class="modal-overlay">
 		</div>
 		
-		<div class="modal-search">
-		  <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-		    <input class="content-search" type="text" name="search" placeholder="Что ищем?">
-		  </form>
-		</div>
-		
-		<div class="modal-login">
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="content-user" type="text" name="login" placeholder="Электронная почта" required>
-            <input class="content-password" type="password"  name="password" placeholder="Пароль" required>
-            <button class="btn" type="submit">Войти</button>
-			<a class="restore" href="#">Забыли пароль?</a>
-		    <a class="new-user" href="#">Новая регистрация</a>
-          </form>
-        </div>
-				
 		<div class="modal-feedback">
 		  <button class="modal-feedback-close" type="button" title="Закрыть">Закрыть</button>
 		  <span class="modal-feedback-title">Мы обязательно вам ответим!</span>
